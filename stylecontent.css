@@ -1,0 +1,655 @@
+/* Основные стили контента */
+.content_block {
+    margin: 220px auto 50px;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 30px;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+/* Стили для страницы Левитана */
+.content_block h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+}
+
+.content_block h2 {
+    color: #D40F13;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-family: 'Jura', sans-serif;
+    font-weight: 600;
+    border-left: 4px solid #820603;
+    padding-left: 15px;
+}
+
+.content_block h3 {
+    color: #333;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Jura', sans-serif;
+    font-weight: 500;
+}
+
+.content_block p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 16px;
+}
+
+.content_block ul, 
+.content_block ol {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.content_block li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Блок с изображением */
+.blockat__img {
+    background-image: url(foto/arter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    width: 460px;
+    border-radius: 0 8px 8px 0;
+    flex-shrink: 0;
+}
+
+/* Видео блок */
+.video_car {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.video_car video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+}
+
+/* Кнопки управления видео */
+.video-controls {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.control-btn {
+    background-color: #D40F13;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Jura', sans-serif;
+}
+
+.control-btn:hover {
+    background-color: #B00D10;
+}
+
+/* Полоса прокрутки */
+.seek-bar {
+    width: 100%;
+    max-width: 800px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+/* Таблица сравнения */
+.comparison-table {
+    margin: 40px 0;
+    overflow-x: auto;
+}
+
+.comparison-table h2 {
+    color: #D40F13;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.comparison-table th {
+    background-color: #D40F13;
+    color: white;
+    padding: 15px 12px;
+    text-align: left;
+    font-weight: 600;
+    font-family: 'Jura', sans-serif;
+    border: none;
+}
+
+.comparison-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    line-height: 1.5;
+    color: #555;
+}
+
+.comparison-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.comparison-table td:last-child {
+    background-color: #fff9f9;
+    color: #D40F13;
+    font-weight: 500;
+}
+
+/* Стили для цитаты Левитана */
+.levitan-quote {
+    background-color: #f5f5f5;
+    border-left: 4px solid #D40F13;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 4px;
+    font-style: italic;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+.levitan-quote span {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Таймлайн */
+.levitan-timeline {
+    margin: 30px 0;
+    border-left: 3px solid #D40F13;
+    padding-left: 20px;
+    position: relative;
+}
+
+.levitan-timeline-item {
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.levitan-timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -26px;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #D40F13;
+    border: 2px solid white;
+    box-shadow: 0 0 0 3px #D40F13;
+}
+
+.levitan-timeline-item h3 {
+    color: #D40F13;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.levitan-timeline-item p {
+    color: #666;
+    margin: 0;
+    font-size: 15px;
+}
+
+/* Аудио секция */
+.levitan-audio-section {
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 30px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.levitan-audio-section h3 {
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.levitan-audio-section p {
+    color: #ddd;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.audio-description {
+    color: #aaa !important;
+    font-size: 14px !important;
+    margin-top: 10px !important;
+    font-style: italic;
+}
+
+/* Кнопки CTA */
+.levitan-cta-button {
+    display: inline-block;
+    background-color: #D40F13;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 10px 5px;
+    font-family: 'Jura', sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.levitan-cta-button:hover {
+    background-color: #B00D10;
+}
+
+/* Форма подписки */
+.levitan-subscribe {
+    background: #f8f8f8;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 30px 0;
+    text-align: center;
+    border: 2px solid #D40F13;
+}
+
+.levitan-subscribe h3 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.subscribe-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.subscribe-form input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.subscribe-form input[type="email"]:focus {
+    outline: none;
+    border-color: #D40F13;
+}
+
+.privacy-note {
+    font-size: 14px;
+    color: #888;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+/* Блок ссылок */
+.levitan-links {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Выделенный текст */
+.highlight {
+    background-color: #fff0f0;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #D40F13;
+}
+
+/* Изображения в контенте */
+.content_block img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 20px auto;
+}
+
+.image-caption {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Форма обратной связи */
+.contact-form {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    color: #D40F13;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contact-form p {
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 16px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Jura', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #D40F13;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #D40F13;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #B00D10;
+}
+
+.form-note {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.form-success {
+    display: none;
+    background-color: #e8f5e9;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #2e7d32;
+}
+
+.form-success.show {
+    display: block;
+}
+/* Flex-контейнер для текста и изображения */
+.content-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.text-part {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image-part {
+    flex: 0 0 400px;
+    text-align: center;
+}
+
+.content-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.image-caption {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 992px) {
+    .content-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .image-part {
+        flex: 0 0 auto;
+        width: 100%;
+        order: -1; /* Изображение будет выше текста на мобильных */
+    }
+    
+    .content-image {
+        max-width: 100%;
+    }
+}
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .content_block {
+        margin: 220px 30px 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .blockat__img {
+        width: 100%;
+        height: 300px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    
+    .content_block {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .content_block {
+        margin: 220px 20px 30px;
+        padding: 20px;
+    }
+    
+    .content_block h1 {
+        font-size: 26px;
+    }
+    
+    .content_block h2 {
+        font-size: 22px;
+    }
+    
+    .content_block h3 {
+        font-size: 18px;
+    }
+    
+    .video-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .control-btn {
+        width: 90%;
+        max-width: 250px;
+        margin: 5px 0;
+    }
+    
+    .comparison-table table {
+        font-size: 14px;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+        padding: 8px 6px;
+    }
+    
+    .levitan-quote {
+        font-size: 16px;
+        padding: 15px;
+    }
+    
+    .levitan-audio-section,
+    .levitan-subscribe {
+        padding: 20px;
+    }
+    
+    .levitan-cta-button {
+        display: block;
+        margin: 10px 0;
+        width: 100%;
+    }
+    
+    .contact-form {
+        margin: 30px 15px;
+        padding: 20px;
+    }
+    
+    .contact-form h2 {
+        font-size: 24px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content_block {
+        margin: 200px 15px 20px;
+        padding: 15px;
+    }
+    
+    .content_block h1 {
+        font-size: 22px;
+    }
+    
+    .content_block h2 {
+        font-size: 20px;
+    }
+    
+    .video-controls {
+        gap: 5px;
+    }
+    
+    .control-btn {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+    
+    .levitan-timeline {
+        padding-left: 15px;
+    }
+    
+    .levitan-timeline-item:before {
+        left: -21px;
+    }
+}
+@media (max-width: 768px) {
+    .content-flex {
+        flex-direction: column;
+    }
+    
+    .image-part {
+        flex: 0 0 auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-flex {
+        gap: 15px;
+    }
+    
+    .image-caption {
+        font-size: 13px;
+    }
+}

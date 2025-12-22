@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="stylecontent.css">
+    <!-- PhotoSwipe CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.3/photoswipe.min.css">
+    <title>ЭхоВойны</title>
+    <style>
+        
+        .pswp__img {
+            cursor: grab;
+        }
+        .pswp__img:active {
+            cursor: grabbing;
+        }
+        .image-part img {
+            cursor: zoom-in;
+            transition: transform 0.3s ease;
+        }
+        .image-part img:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+     <div class="first_foto"></div>
+ <header class="header container">
+    <div class="logo">
+        <h1>ЭхоВойны</h1>
+    </div>
+    
+    <!-- Кнопка гамбургер-меню -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Основное меню для десктопа -->
+    <nav class="desktop-nav">
+
+        <ul class="button_list">
+            <li>
+                <a href="index.html" class="text_button">
+                    <div class="header_button_1">Главная</div>
+                </a> 
+            </li>
+            <li class="dropdown">
+                <a href="#" class="text_button">
+                    <div class="header_button_1">Меню</div>
+                </a>
+                <div class="dropdown-content">
+                    <a href="#">Ключевые события</a>
+                    <a href="#">Фотоархив</a>
+                    <a href="car.html">Техника победы</a>
+                </div>    
+            </li>
+            <li>
+                <a href="end.html" class="text_button">
+                    <div class="header_button_3">О проекте</div>
+                </a> 
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Мобильное меню -->
+    <nav class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Ключевые события</a></li>
+            <li><a href="#">Фотоархив</a></li>
+            <li><a href="car.html">Техника победы</a></li>
+            <li><a href="end.html">О проекте</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class = "content_block">
+        <div class="content-wrapper">
+        <div class="text-content">
+            <h1>Стальная «Катюша» — Гроза фашистов</h1>
+            <h2>Рождение легенды</h2>
+            <p>Разработка советской реактивной артиллерии началась еще в конце 1930-х годов...</p>
+            
+          
+            <div class="content-flex">
+    <div class="text-part">
+        <h2>Почему «Катюша»? Тайна имени</h2>
+        <p>Разработка советской реактивной артиллерии началась еще в конце 1930-х годов.
+           К июню 1941 года первая батарея из семи установок БМ-13 под командованием капитана 
+           Ивана Флерова была сформирована и успела провести испытания.
+           14 июля 1941 года — эта дата стала днем крещения «Катюши». Батарея Флерова нанесла 
+           сокрушительный удар по занятому фашистами железнодорожному узлу города Орша. Мощность 
+           залпа была колоссальной: за считанные секунды вражеские эшелоны с техникой и живой силой
+           были уничтожены. Ошеломленные немцы назвали это оружие «адской мясорубкой» и «сталинским оргáном»
+           — за характерный звук, напоминающий церковный гимн.</p>
+    </div>
+    
+    <div class="image-part">
+      
+        <a href="foto/arter.jpg" data-pswp-width="1200" data-pswp-height="800" 
+           onclick="openPhotoSwipe(0)" title="Загрузка боекомплекта Катюши">
+            <img src="foto/arter.jpg" alt="Загрузка боекомплекта Катюши" class="content-image">
+        </a>
+        <p class="image-caption">Загрузка боекомплекта (кликните для увеличения)</p>
+    </div>
+</div>
+             <h2> Почему «Катюша»? Тайна имени</h2>  
+             <p>До сих пор нет единой версии происхождения этого народного имени. Вот самые популярные из них:
+                <ol>
+                    <li>  Марка «К». На первых установках стоял индекс «К» — от завода имени Коминтерна. Солдаты, 
+                соблюдая секретность, стали называть машину ласковым именем на эту букву.
+                    </li>
+                    <li>Песня «Катюша». Знаменитая песня была невероятно популярна в предвоенные годы. По одной из версий,
+                        бойцы, восхищенные мощью установки, ассоциировали ее с чем-то сильным, точным и родным — как и
+                        героиня песня.
+                    </li>
+                    <li>
+                        «Катюша» против «Ванюши». Немцы называли аналогичное, но менее совершенное оружие «Небельверфер»
+                        («туманный метатель»), а наши солдаты дали ему прозвище «Ванюша». «Катюша» звучало ярче, звонче и победоноснее.
+                    </li>
+                </ol>
+              </p>  
+            <h2>В чем был секрет успеха?</h2>
+            <p>Пока инженеры создавали боевую «Катюшу», композитор Матвей Блантер и поэт Михаил Исаковский в 1938 году подарили миру
+                 свою «Катюшу» — песню о девушке, хранящей верность бойцу на дальнем пограничье.
+                Песня мгновенно стала шлягером. А с началом войны ее судьба изменилась. «Катюша» превратилась в 
+                гимн надежды и любви, который ждали с фронта и которому верили в тылу. Ее пели в окопах и у 
+                костров, она поднимала боевой дух.
+            </p>
+            <h2>«Катюша» на все времена</h2>
+            <p>После войны песня шагнула далеко за пределы СССР. Она стала одним из символов России во всем мире,
+                 особенно в Италии, где ее знают как «Катарина» или «Казуска». Песня исполнялась и исполняется 
+                 тысячами артистов на сотнях языков.</p>
+
+            <div class="comparison-table">
+                <h2>Сравнительная характеристика реактивных систем залпового огня</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Характеристика</th>
+                            <th>СССР: БМ-13 "Катюша"</th>
+                            <th>Германия: Nebelwerfer 41</th>
+                            <th>Преимущество "Катюши"</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Калибр снаряда</td>
+                            <td>132 мм</td>
+                            <td>158.5 мм</td>
+                            <td>Меньший калибр компенсировался большим количеством снарядов в залпе и лучшей мобильностью</td>
+                        </tr>
+                        <tr>
+                            <td>Количество направляющих</td>
+                            <td>16</td>
+                            <td>6 (барабанного типа)</td>
+                            <td>Более чем в 2.5 раза больше снарядов в одном залпе</td>
+                        </tr>
+                        <tr>
+                            <td>Залп по времени</td>
+                            <td>7-10 секунд</td>
+                            <td>10 секунд</td>
+                            <td>Сопоставимо, но площадь поражения у "Катюши" была значительно больше</td>
+                        </tr>
+                        <tr>
+                            <td>Площадь поражения залпом</td>
+                            <td>До ~70 000 м² (примерно 10 футбольных полей)</td>
+                            <td>До ~25 000 м²</td>
+                            <td>Подавляющее превосходство в площади поражения</td>
+                        </tr>
+                        <tr>
+                            <td>Платформа</td>
+                            <td>Шасси грузовика (ЗИС-6, "Студебеккер")</td>
+                            <td>Специальный лафет (буксируемый или на базе полугусеничного тягача)</td>
+                            <td>Высокая мобильность. Могла быстро совершить марш, залп и сменить позицию</td>
+                        </tr>
+                        <tr>
+                            <td>Экипаж</td>
+                            <td>5-7 человек</td>
+                            <td>6-7 человек</td>
+                            <td>Сопоставимо</td>
+                        </tr>
+                        <tr>
+                            <td>Психологическое воздействие</td>
+                            <td>Оглушительный рев, сплошное поражение местности</td>
+                            <td>Визгливый вой снарядов ("Ишак")</td>
+                            <td>Залп "Катюши" был более массированным и деморализующим</td>
+                        </tr>
+                        <tr>
+                            <td>Ключевая тактика</td>
+                            <td>"Залп-отход": Массированный удар с последующей сменой позиции</td>
+                            <td>Позиционная стрельба, менее мобильная</td>
+                            <td>Тактическая гибкость и выживаемость на поле боя</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="video_car">
+                <video id="kateVideo" controls>
+                    <source src="foto/katevideo.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+            
+            <div class="video-controls">
+                <button class="control-btn" onclick="playVideo()">▶ Воспроизвести</button>
+                <button class="control-btn" onclick="pauseVideo()">⏸ Пауза</button>
+                <button class="control-btn" onclick="restartVideo()">⏮ Начать сначала</button>
+                <button class="control-btn" onclick="skipBackward()">⏮ Назад на 10с</button>
+                <button class="control-btn" onclick="skipForward()">⏭ Вперед на 10с</button>
+            </div>
+        </div>
+    </section>
+</main>    
+
+
+<footer>
+    <div class="footer_conter">
+        <div>Соклов Никита</div>
+        <div>25 - ИСТ - 1-2</div>
+    </div>
+</footer>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Закрыть (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Поделиться"></button>
+                <button class="pswp__button pswp__button--fs" title="Полноэкранный режим"></button>
+                <button class="pswp__button pswp__button--zoom" title="Увеличить/уменьшить"></button>
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Предыдущее (стрелка влево)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Следующее (стрелка вправо)"></button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+\
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.3/umd/photoswipe.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.3/umd/photoswipe-lightbox.umd.min.js"></script>
+
+<script>
+    // Инициализация PhotoSwipe
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '.content-flex',
+        children: 'a',
+        pswpModule: PhotoSwipe,
+        showHideAnimationType: 'fade',
+        bgOpacity: 0.9,
+        wheelToZoom: true,
+        preloaderDelay: 0,
+        paddingFn: (viewportSize) => {
+            return {
+                top: 30,
+                bottom: 30,
+                left: 70,
+                right: 70
+            };
+        }
+    });
+    
+    // Добавляем подписи к изображениям
+    lightbox.on('uiRegister', () => {
+        lightbox.pswp.ui.registerElement({
+            name: 'custom-caption',
+            order: 9,
+            isButton: false,
+            appendTo: 'root',
+            html: 'Текст подписи',
+            onInit: (el, pswp) => {
+                lightbox.pswp.on('change', () => {
+                    const currSlideElement = lightbox.pswp.currSlide.data.element;
+                    let captionText = '';
+                    if (currSlideElement) {
+                        const title = currSlideElement.getAttribute('title');
+                        if (title) {
+                            captionText = title;
+                        }
+                    }
+                    el.innerHTML = captionText || '';
+                });
+            }
+        });
+    });
+    
+    lightbox.init();
+
+    function openPhotoSwipe(index) {
+        lightbox.loadAndOpen(index);
+    }
+</script>
+
+<script src="navigathion.js"></script>
+</html>
