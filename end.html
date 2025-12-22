@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="normalize.css">
      <link rel="stylesheet" href="stylecontent.css">
-    <script src="/navigathion.js"></script>
+
     <title>ЭхоВойны</title>
 </head>
 <body>
@@ -77,25 +77,31 @@
 кто прошёл через огонь войны, защищая свою Родину.
 Мы верим, что память — это не просто история, это ответственность. В условиях, когда время уносит последних свидетелей тех событий, важно сохранить их голоса, их боль, их подвиг. Наш проект — это цифровой памятник миллионам героев, чьи имена не должны исчезнуть в забвении.
                 </p> 
-                <form id="feedbackForm">
-                    <div class="form-group">
-                        <label for="name">Ваше имя *</label>
-                        <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Ваш email *</label>
-                        <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Сообщение *</label>
-                        <textarea id="message" name="message" rows="5" 
-                                placeholder="Здравствуйте! Я хочу поделиться историей о..." 
-                                required></textarea>
-                    </div>
-                    <button type="submit" class="read-more">Отправить сообщение</button>
-                    <p class="form-note">* - обязательные для заполнения поля</p>
-                </form>
+               <form id="feedbackForm">
+    <div class="form-group">
+        <label for="name">Ваше имя *</label>
+        <input type="text" id="name" name="name" 
+               placeholder="Иван Иванов" required 
+               autocomplete="name">
+    </div>
+    
+    <div class="form-group">
+        <label for="email">Ваш email *</label>
+        <input type="email" id="email" name="email" 
+               placeholder="example@mail.ru" required 
+               autocomplete="email">
+    </div>
+    
+    <div class="form-group">
+        <label for="message">Сообщение *</label>
+        <textarea id="message" name="message" rows="5" 
+                  placeholder="Здравствуйте! Я хочу поделиться историей о..." 
+                  required autocomplete="off"></textarea>
+    </div>
+    
+    <button type="submit" class="read-more">Отправить сообщение</button>
+    <p class="form-note">* - обязательные для заполнения поля</p>
+</form>
                 </div>
                    
                 </div>
@@ -115,4 +121,5 @@
     <div> 25 - ИСТ - 1-2</div>
 </div>
 </footer>
+    <script src="navigathion.js"></script>
 </html>
