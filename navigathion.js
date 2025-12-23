@@ -35,7 +35,7 @@ function skipForward() {
     }
 }
 
-// Функция для инициализации формы обратной связи
+
 function initFeedbackForm() {
     const feedbackForm = document.getElementById('feedbackForm');
     
@@ -76,7 +76,6 @@ function initFeedbackForm() {
                 <p>Спасибо, ${name}! Мы получили ваше сообщение и свяжемся с вами в течение 24 часов.</p>
             `;
             
-            // Вставка сообщения после формы
             feedbackForm.parentNode.insertBefore(successMessage, feedbackForm.nextSibling);
             
             // Плавное появление
@@ -131,17 +130,16 @@ function initMobileMenu() {
     }
 }
 
-// Функция для инициализации всех скриптов
+
 function initAllScripts() {
     console.log('Инициализация скриптов...');
     
     // Инициализация формы обратной связи
     initFeedbackForm();
     
-    // Инициализация мобильного меню
     initMobileMenu();
     
-    // Дополнительные проверки
+    
     const mainElement = document.getElementById('main');
     const containers = document.getElementsByClassName('container');
     const links = document.getElementsByTagName('a');
@@ -151,14 +149,13 @@ function initAllScripts() {
                 ссылок=${links.length}`);
 }
 
-// Запуск инициализации при полной загрузке DOM
+
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initAllScripts);
 } else {
     initAllScripts();
 }
 
-// Экспорт функций для использования в HTML (если нужно)
 window.playVideo = playVideo;
 window.pauseVideo = pauseVideo;
 window.restartVideo = restartVideo;
