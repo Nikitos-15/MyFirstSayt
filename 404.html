@@ -1,15 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+   
     <title>404</title>
 </head>
 <body>
-    <h1>404</h1>
+        <div class="first_foto"></div>
+<header class="header container">
+    <div class="logo">
+        <h1>ЭхоВойны</h1>
+    </div>
+    
+    <!-- Кнопка гамбургер-меню -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Основное меню для десктопа -->
+    <nav class="desktop-nav">
+
+        <ul class="button_list">
+            <li>
+                <a href="index.html" class="text_button">
+                    <div class="header_button_1">Главная</div>
+                </a> 
+            </li>
+            <li class="dropdown">
+                <a href="#" class="text_button">
+                    <div class="header_button_1">Меню</div>
+                </a>
+                <div class="dropdown-content">
+                    <a href="404.html">Ключевые события</a>
+                    <a href="404.html">Фотоархив</a>
+                    <a href="car.html">Техника победы</a>
+                </div>    
+            </li>
+            <li>
+                <a href="end.html" class="text_button">
+                    <div class="header_button_3">О проекте</div>
+                </a> 
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Мобильное меню -->
+    <nav class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="404.html">Ключевые события</a></li>
+            <li><a href="404.html">Фотоархив</a></li>
+            <li><a href="car.html">Техника победы</a></li>
+            <li><a href="end.html">О проекте</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+     <section class = "content-section">
+     <h1>404</h1>
     <h3>Страница не найдена</h3>
     <p>Запрашиваемая страница не существует.</p>
         <p> 
             <a href="/index.html">Главная</a> 
             <a href="javascript:history.back()">Назад</a>
         </p>
+    </section>
+    </main>
+   
 </body>
+<script src="/navigathion.js"></script>
 </html>
